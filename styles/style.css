@@ -55,7 +55,7 @@ aside img{
     width: 100%;
 }
 main{
-    background-color: #117cff;
+    background-color: white;
 }
 .banner img{
     width: 100%;
@@ -68,7 +68,7 @@ main{
     flex-direction: row;
 }
 .novedadesDivsItem{
-    background-color: rgb(255, 255, 0);
+    background-color: white;
     margin: 24px;
 }
 .novedadesDivs img{
