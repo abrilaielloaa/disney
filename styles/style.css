@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62,5%;
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+form{
+    margin-right: 24px;
+    display: flex;
+    height: 5vh;    
+    border: solid 1px black;
+    border-radius: 5px;
+
+}
+input{
+    font-size: 1rem;
+    background-color: #ededed;
+    border: none;    
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+nav ul{
+    font-weight: bold;
+}
+ul{
+    list-style:none;
+    font-family: helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+li{
+    margin: 10px;
+}
+aside{
+    display: flex;
+    justify-content: center;
+    margin: 32px 0;
+}
+aside img{
+    width: 100%;
+}
+main{
+    background-color: #ededed;
+}
+.banner img{
+    width: 100%;
+}
+.imgMobile{
+    display: none;
+}
+.novedadesDivs{
+    display: flex;
+    flex-direction: row;
+}
+.novedadesDivsItem{
+    background-color: white;
+    margin: 24px;
+}
+.novedadesDivs img{
+    width: 100%;
+}
+.novedadesTexto{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+}
+h2{
+    text-align: center;
+    font-family: helvetica,sans-serif;
+}
+.tendenciasDivs{
+    display: flex;
+    flex-direction: row;
+}
+.tendenciasDivs div{
+    width: 100%;
+    margin: 24px;
+}
+.tendenciasDivs img{
+    border-radius: 20px;
+    width: 100%;
+}
+.footerNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footerNav ul{
+    margin-left: 5rem;
+}
+.footerDetalles{
+    padding: 30px 0;
+    font-weight: 100;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerDetalles div{
+    margin: 16px 0;
+}
+/* grid area */
+.sectionGridArea{
+    background-color: white;
+    padding: 0 15%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas:
+    "areauno areauno areauno areauno"
+    "areados areados areatres areatres"
+    "areacuatro areacuatro areacuatro areacuatro"
+    "areacinco areaseis areasiete areaocho"
+    "areanueve areanueve areanueve areanueve"
+    "areadiez areadiez areadiez areadiez"
+    ;
+}
+.sectionGridArea img{
+    width: 100%;
+}
+.gridArea1{
+    width: 100%;
+    grid-area: areauno;
+}
+.gridArea2{
+    grid-area: areados;
+}
+.gridArea3{
+    grid-area: areatres;
+}
+.gridArea4{
+    grid-area: areacuatro;
+}
+.gridArea4 img{
+    width: 50%;
+}
+.gridArea5{
+    grid-area: areacinco;
+}
+.gridArea6{
+    grid-area: areaseis;
+}
+.gridArea7{
+    grid-area: areasiete;
+}
+.gridArea8{
+    grid-area: areaocho;
+}
+.gridArea9{
+    grid-area: areanueve;
+}
+.gridArea10{
+    grid-area: areadiez;
+}
+
+@media (max-width:768px){
+    header{
+        flex-direction: column;
+    }
+    ul{
+        flex-direction: column;
+    }
+    .imgDesktop{
+        display: none;
+    }
+    .imgMobile{
+        display: inline;
+    }
+    .novedadesDivs{
+        flex-direction: column;
+    }
+    .tendenciasDivs{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tendenciasDivs div{
+        width: 85%;
+    }
+    .footerNav{
+        flex-direction: column;
+    }
+    .sectionGridArea{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        grid-template-areas:
+        "areauno areauno"
+        "areados areatres"
+        "areacuatro areacuatro"
+        "areacinco areaseis"
+        "areasiete areaocho"
+        "areanueve areanueve"
+        "areadiez areadiez"
+        }
+}
+@media (max-width:600px){
+    .sectionGridArea{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        grid-template-areas:
+        "areauno"
+        "areados"
+        "areatres"
+        "areacuatro"
+        "areacinco"
+        "areaseis"
+        "areasiete"
+        "areaocho"
+        "areanueve"
+        "areadiez";
+    }
+}
